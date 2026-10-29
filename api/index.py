@@ -1,6 +1,12 @@
 """Vercel entry point for the MedCore JSON API."""
 
-from index import Handler
+import os
+
+os.environ.setdefault("MEDCORE_DB_PATH", "/tmp/medcore.db")
+
+from index import Handler, init_db
+
+init_db()
 
 
 class handler(Handler):
