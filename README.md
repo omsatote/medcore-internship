@@ -188,6 +188,10 @@ such as PostgreSQL, then configure the connection through Vercel environment
 variables. The static frontend can remain served by Vercel while API requests
 target the serverless backend.
 
+On Vercel, the demo runtime uses `/tmp/medcore.db` so the function can start.
+That filesystem is temporary and may be cleared between invocations; it is not
+appropriate for persistent patient or billing data.
+
 ## License
 
 This project is provided for internship, learning, and demonstration purposes.

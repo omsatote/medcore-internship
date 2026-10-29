@@ -24,7 +24,7 @@ from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
 ROOT = Path(__file__).parent
-DB_PATH = ROOT / "medcore.db"
+DB_PATH = Path(os.environ.get("MEDCORE_DB_PATH", str(ROOT / "medcore.db")))
 PORT = int(os.environ.get("PORT", "8765"))
 DB_LOCK = threading.Lock()
 
