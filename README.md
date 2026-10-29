@@ -125,6 +125,9 @@ Open **http://127.0.0.1:8765** in your browser.
 medcore-internship/
 ├── index.py              # HTTP server, API routes, and SQLite initialization
 ├── index.html            # Responsive dashboard and client-side API logic
+├── api/
+│   └── index.py          # Vercel serverless API entry point
+├── vercel.json           # Vercel routing configuration
 ├── medcore-preview.svg     # Repository preview artwork
 ├── .gitignore            # Excludes local database, cache, and secrets
 └── README.md             # Project documentation
@@ -167,17 +170,23 @@ hospital information system. Before handling real patient information:
 
 ## Deployment
 
-The current version runs well as a local Python application. A direct Vercel
-deployment is not yet suitable because this version uses:
+The repository now includes a Vercel API entry point and routing configuration,
+so the frontend no longer receives an HTML 404 page when it calls `/api/login`.
+However, the current data layer still uses local SQLite, which is not durable
+across Vercel serverless invocations. The app can be used as a deployment demo,
+but persistent production data requires a hosted database.
+
+The current version still uses:
 
 1. A long-running `ThreadingHTTPServer`
 2. A writable local SQLite file
 3. In-process application state
 
-For Vercel, the backend should first be adapted into Python serverless
-functions and the database should move to a hosted service such as PostgreSQL.
-The static frontend can then be served by Vercel while API requests target the
-serverless backend.
+The `api/index.py` adapter exposes the existing Python request handler through
+Vercel's Python runtime. For production, move the database to a hosted service
+such as PostgreSQL, then configure the connection through Vercel environment
+variables. The static frontend can remain served by Vercel while API requests
+target the serverless backend.
 
 ## License
 
