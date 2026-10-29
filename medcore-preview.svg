@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">MedCore hospital management dashboard preview</title>
+  <desc id="desc">A warm, modern hospital administration dashboard showing metrics, appointments, and quick actions.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fffdf6"/>
+      <stop offset="1" stop-color="#fff7d6"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#17202a" flood-opacity=".12"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="680" rx="28" fill="url(#bg)"/>
+  <rect x="34" y="34" width="1132" height="612" rx="22" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="34" y="34" width="220" height="612" rx="22" fill="#17202a"/>
+  <circle cx="76" cy="82" r="20" fill="#f6c844"/>
+  <path d="M76 70v24M64 82h24" stroke="#17202a" stroke-width="5" stroke-linecap="round"/>
+  <text x="109" y="90" fill="#ffffff" font-family="Arial,sans-serif" font-size="24" font-weight="700">MedCore</text>
+  <g font-family="Arial,sans-serif" font-size="15" fill="#b9c1c7">
+    <text x="68" y="151" fill="#f6c844" font-weight="700">◈  Overview</text>
+    <text x="68" y="197">♙  Patients</text><text x="68" y="243">◷  Appointments</text>
+    <text x="68" y="289">▣  Medical records</text><text x="68" y="335">⌁  Pharmacy</text>
+    <text x="68" y="381">₹  Billing</text><text x="68" y="427">▥  Analytics</text>
+  </g>
+  <line x1="64" y1="560" x2="220" y2="560" stroke="#36414a"/>
+  <circle cx="84" cy="595" r="18" fill="#e8f4ec"/><text x="75" y="601" fill="#16805b" font-family="Arial,sans-serif" font-size="13" font-weight="700">AR</text>
+  <text x="112" y="592" fill="#ffffff" font-family="Arial,sans-serif" font-size="13" font-weight="700">Ananya Rao</text>
+  <text x="112" y="610" fill="#9ea8af" font-family="Arial,sans-serif" font-size="11">Hospital Admin</text>
+  <g font-family="Arial,sans-serif">
+    <text x="294" y="86" fill="#8a9297" font-size="13">THURSDAY, 29 OCTOBER 2026</text>
+    <text x="294" y="122" fill="#17202a" font-size="31" font-weight="700">Good morning, Ananya</text>
+    <rect x="1015" y="78" width="112" height="40" rx="9" fill="#f6c844"/><text x="1038" y="103" fill="#17202a" font-size="13" font-weight="700">+ New patient</text>
+    <g fill="#ffffff" stroke="#ece8dc">
+      <rect x="294" y="154" width="190" height="104" rx="14"/><rect x="500" y="154" width="190" height="104" rx="14"/>
+      <rect x="706" y="154" width="190" height="104" rx="14"/><rect x="912" y="154" width="190" height="104" rx="14"/>
+      <rect x="294" y="286" width="520" height="270" rx="14"/><rect x="836" y="286" width="266" height="270" rx="14"/>
+    </g>
+    <g fill="#6b7280" font-size="12"><text x="316" y="182">TOTAL PATIENTS</text><text x="522" y="182">DOCTORS / STAFF</text><text x="728" y="182">APPOINTMENTS TODAY</text><text x="934" y="182">BED OCCUPANCY</text></g>
+    <g fill="#17202a" font-size="28" font-weight="700"><text x="316" y="222">5</text><text x="522" y="222">4 / 4</text><text x="728" y="222">1</text><text x="934" y="222">2 / 4</text></g>
+    <text x="316" y="244" fill="#16805b" font-size="11">↑ 12% this month</text><text x="522" y="244" fill="#16805b" font-size="11">Active care team</text>
+    <text x="728" y="244" fill="#16805b" font-size="11">Live schedule</text><text x="934" y="244" fill="#16805b" font-size="11">Ward overview</text>
+    <text x="316" y="321" fill="#17202a" font-size="17" font-weight="700">Today's appointments</text>
+    <g fill="#6b7280" font-size="11"><text x="316" y="355">TIME</text><text x="430" y="355">PATIENT</text><text x="556" y="355">DOCTOR</text><text x="697" y="355">STATUS</text></g>
+    <g fill="#17202a" font-size="13"><text x="316" y="397">12:02</text><text x="430" y="397">Patient #5</text><text x="556" y="397">Dr. Om</text><text x="697" y="397">IN PROGRESS</text><text x="316" y="448">10:00</text><text x="430" y="448">Patient #1</text><text x="556" y="448">Dr. Ananya Rao</text><text x="697" y="448">CONFIRMED</text></g>
+    <text x="858" y="321" fill="#17202a" font-size="17" font-weight="700">Quick actions</text>
+    <g fill="#fffdf6" stroke="#ece8dc"><rect x="858" y="350" width="102" height="72" rx="10"/><rect x="974" y="350" width="102" height="72" rx="10"/><rect x="858" y="438" width="102" height="72" rx="10"/><rect x="974" y="438" width="102" height="72" rx="10"/></g>
+    <g fill="#17202a" font-size="12" font-weight="700"><text x="871" y="381">Register</text><text x="987" y="381">Book visit</text><text x="871" y="469">Add record</text><text x="987" y="469">Invoice</text></g>
+  </g>
+</svg>
