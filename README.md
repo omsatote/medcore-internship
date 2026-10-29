@@ -1,7 +1,7 @@
 # MedCore HMS
 
 <p align="center">
-  <img src="docs/medcore-preview.svg" alt="MedCore HMS preview" width="900">
+  <img src="medcore-preview.svg" alt="MedCore HMS preview" width="900">
 </p>
 
 <p align="center">
@@ -125,8 +125,7 @@ Open **http://127.0.0.1:8765** in your browser.
 medcore-internship/
 ├── index.py              # HTTP server, API routes, and SQLite initialization
 ├── index.html            # Responsive dashboard and client-side API logic
-├── docs/
-│   └── medcore-preview.svg # Repository preview artwork
+├── medcore-preview.svg     # Repository preview artwork
 ├── .gitignore            # Excludes local database, cache, and secrets
 └── README.md             # Project documentation
 ```
